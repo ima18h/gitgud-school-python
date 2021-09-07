@@ -1,5 +1,5 @@
 from calculator import add, divide, factorial, sin
-from pytest import approx
+from pytest import approx, raises
 from math import pi, sqrt
 
 
@@ -21,3 +21,8 @@ def test_sin():
     assert sin(pi/4) == approx(1/sqrt(2))
     assert sin(pi/2) == approx(1)
     assert sin(3*pi/2) == approx(-1)
+
+def test_is_float_raises_ValueError_for_string_arguments():
+    with raises(ValueError):
+        factorial(-1)
+
