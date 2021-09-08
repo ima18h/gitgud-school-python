@@ -18,9 +18,6 @@ def test_factorial(arg, output):
 @pytest.mark.parametrize("arg, output", [(0, pytest.approx(0)), (pi/4, pytest.approx(1/sqrt(2))), (pi/2, pytest.approx(1)), (3*pi/2, pytest.approx(-1))])
 def test_sin(arg, output):
     assert sin(arg) == output
-    assert sin(pi/4) == pytest.approx(1/sqrt(2))
-    assert sin(pi/2) == pytest.approx(1)
-    assert sin(3*pi/2) == pytest.approx(-1)
 
 def test_is_float_raises_ValueError_for_string_arguments():
     with pytest.raises(ValueError):
