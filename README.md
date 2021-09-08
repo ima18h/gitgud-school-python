@@ -27,6 +27,8 @@ jeg får også melding noen ganger om "Test result not found for: ./test_calcula
 
 jeg legger til en test, den består. jeg legger til en test til, den feiler. jeg fjerner den siste testen, og nå feiler den første også. fuck. 
 
+Forget all that... fixed it lol, my bad. 
+
 
 ## Authors
 - Imad H. (imadha@mail.uio.no)
