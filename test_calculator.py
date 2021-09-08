@@ -15,8 +15,7 @@ def test_divide(arg, arg1, output):
 def test_factorial(arg, output):
     assert factorial(arg) == output
 
-# TODO: wtf?
-@pytest.mark.parametrize("arg, output", [(sin(0), pytest.approx(0))])
+@pytest.mark.parametrize("arg, output", [(0, pytest.approx(0)), (pi/4, pytest.approx(1/sqrt(2))), (pi/2, pytest.approx(1)), (3*pi/2, pytest.approx(-1))])
 def test_sin(arg, output):
     assert sin(arg) == output
     assert sin(pi/4) == pytest.approx(1/sqrt(2))
