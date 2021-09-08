@@ -16,12 +16,15 @@ I know it can be better to not do that.
 Nevermind, we using parametrized tests for that now. cool, cool. 
 
 jeg får ikke disse testene til å bestå på sin() funksjonen (opg.8): 
-    assert sin(pi/4) == pytest.approx(1/sqrt(2))
-    assert sin(pi/2) == pytest.approx(1)
-    assert sin(3*pi/2) == pytest.approx(-1),
+ -    assert sin(pi/4) == pytest.approx(1/sqrt(2))
+ -    assert sin(pi/2) == pytest.approx(1)
+ -    assert sin(3*pi/2) == pytest.approx(-1),
 de bestod før, men ikke under parametrized. 
-det er tungvint å lese dette her uten å bruke mange linjer nedover når man bruker parametrized. 
-jeg får også melding noen ganger om "Test result not found for: ./test_calculator.py::test_sin[0.0-output0]" fra pytest. lite hjelpsom melding... den kommer når jeg prøver å legge til en til test til sin funksjonen, men ikke alltid? 
+
+det er tungvint å lese dette her uten å bruke mange linjer nedover når man bruker parametrized.
+
+jeg får også melding noen ganger om "Test result not found for: ./test_calculator.py::test_sin[0.0-output0]" fra pytest. lite hjelpsom melding... den kommer når jeg prøver å legge til en test til sin funksjonen, men ikke alltid? 
+
 jeg legger til en test, den består. jeg legger til en test til, den feiler. jeg fjerner den siste testen, og nå feiler den første også. fuck. 
 
 
