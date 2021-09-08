@@ -28,4 +28,3 @@ def sin(x, N = 20):
     for n in range(N):
         sin += (-1)**n*x**(2*n + 1) / factorial(2*n + 1)
     return sin
-
