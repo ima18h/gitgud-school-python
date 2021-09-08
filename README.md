@@ -5,12 +5,15 @@ First project in IN1910 about testing with pytest and git
 
 
 ## Lessons Learned
-Learned about git and pytest. 
+- Learned how git can be used to keep things organized, and for potential cooperation. 
+- Learned about ways to make testing clean using pytest. 
+- Testing can be used as a development strategy. Tests are written first, then the functions are implemented. 
 
 
 ## Notes
 I dont think it was needed to define a function for each test. I have all asserts for a certain function inside one defined test function. 
 I know it can be better to not do that. 
+Nevermind, we using parametrized tests for that now. cool, cool. 
 
 
 ## Authors
