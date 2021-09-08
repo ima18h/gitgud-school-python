@@ -26,3 +26,11 @@ def test_is_float_raises_ValueError_for_string_arguments():
     with raises(ValueError):
         factorial(-1)
 
+def test_factorial_raises_TypeError():
+    with raises(ValueError):
+        factorial(1/3)
+
+def test_divide_raises_ZeroDivisionError():
+    with raises(ZeroDivisionError):
+        divide(1, 0)
+
